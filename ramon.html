@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RamonBay</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="stylesheet" href="css/jquery.mobile-1.3.1.css" />
+		<link rel="stylesheet" href="css/jQuery-Mobile-Icon-Pack-master/font-awesome/jqm-icon-pack-fa.css" />
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery.mobile-1.3.1.js"></script>
+	</head>
+	<body>
+
+<!--//page 1 -->
+
+		<div id="welcome_page" data-role="page">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+				<a data-role="button" href="#cart_page" data-icon="shopping-cart" data-iconpos="notext"></a>
+
+				<h1>MyBay</h1>
+			</div>
+			
+			<div data-role="content">
+			
+			<div><a><center><img src=http://something-gold-something-new.com/wp-content/uploads/2013/02/foals-holy-fire-580x352.jpg></a></center></div>
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><center><p>Already a member? Sign in!</p></center></div>
+				<div class="ui-block-b"><a data-role="button" href="#login_page" onclick="submitRegister()">Sign In</a></div>
+			</div><!-- /grid-b -->
+			
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><center><p>Not a member? Create an account!</p></center></div>
+				<div class="ui-block-b"><a data-role="button" href="#register_form" onclick="submitRegister()">Register</a></div>
+			</div><!-- /grid-b -->
+			
+			</div>
+			
+			
+			
+		</div>
+		
+<!--page 2-->
+		
+		<div id="register_form" data-role="page">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+				<a href="#cart_page" data-role="button" data-iconpos="notext" data-icon="shopping-cart"></a>
+				<h1>Registration Form: Step 1</h1>
+			</div>
+			
+			<div data-role="content">
+			
+				<form id="car-form">
+ 					<fieldset data-role="controlgroup">
+ 						<ul>
+  							<li><label for="firstname"> First name: <input id="firstname" name="firstname" type="text"/></label></li>
+  							<li><label for="lastname"> Last name: <input id="lastname" name="lastname" type="text"/></label></li>
+  							<li><label for="email"> Email address: <input id="email" name="email" type="number"/></label></li>
+  							<li><label for="mailing_address"> Mailing address: <input id="mailing_address" name="mailing_address" type="number"/></label></li>
+  			  			</ul>
+			 		</fieldset>
+				</form>
+				
+			<div class="ui-grid-b">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b"><a data-role="button" href="#credit_page" onclick="submitRegister()">Next</a></div>
+				<div class="ui-block-c"></div>
+			</div><!-- /grid-b -->
+				
+			</div>
+			
+			
+		</div>
+		
+<!-- page 3 -->
+		
+	<div id="credit_page" data-role="page">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+				<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#cart_page"></a>
+				<h1>Registration Form: Step 2</h1>
+			</div>
+			
+			<div data-role="content">		
+
+				<form id="car-form">
+ 					<fieldset data-role="controlgroup">
+ 						<ul>
+  				  			<li><label for="account_number"> Account number:  <input id="account_number" name="account_number" type="number"/></label></li>
+  				  			<li><label for="billing_address"> Billing address: <input id="billing_address" name="billing_address" type="number"/></label></li>
+  			  	  			<li><label for="credit_card"> Credit card information: <input id="credit_card" name="credit_card" type="number"/></label></li>
+
+  			  			</ul>
+			 		</fieldset>
+				</form>		
+				
+			<div class="ui-grid-b">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b"><a data-role="button" onclick="submitRegister()">Create account</a></div>
+				<div class="ui-block-c"></div>
+			</div>		
+						
+				
+			</div>
+			
+	</div>
+	
+<!-- page 4 -->	
+	
+	<div id="cart_page" data-role="page">
+			<div data-role="header" data-theme="b" data-position="fixed">
+				<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+				<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+				<h1>Shopping Cart</h1>
+			</div>
+			
+			<div data-role="content">		
+
+				
+			</div>
+			
+			
+	</div>
+				
+	<!-- page 5 -->	
+		
+			<div id="login_page" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Log In</h1>
+				</div>
+			
+				<div data-role="content">	
+				
+					<form id="car-form">
+ 						<fieldset data-role="controlgroup">
+ 							<ul>
+  				  				<li><label for="user_name"> User name:  <input id="user_name" name="user_name" type="number"/></label></li>
+  				  				<li><label for="password"> Password: <input id="password" name="password" type="number"/></label></li>
+  			  				</ul>
+			 			</fieldset>
+					</form>		
+			
+			<div class="ui-grid-c">
+				<div class="ui-block-a"></div>
+				<div class="ui-block-b">
+					
+					<select name="select-choice-0" id="select-choice-1">
+   						<option value="standard">As guest</option>
+   						<option value="rush">As member</option>
+   						<option value="express">As administrator</option>
+					</select>
+					
+				</div>
+				<div class="ui-block-c"><a data-role="button" href="#home_page" onclick="submitRegister()">Sign in</a></div>
+				</div>		
+									
+			</div>
+		</div>	
+		
+	<!-- page 6 -->	
+		
+		
+		<div id="home_page" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+			
+			<div data-role="content">	
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a data-role="button" onclick="submitRegister()">MyBay</a></div>
+					<div class="ui-block-c"></div>
+				</div>	
+				
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a data-role="button" onclick="submitRegister()">Sell Item</a></div>
+					<div class="ui-block-c"></div>
+				</div>	
+				
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a data-role="button" href="#browse_index" onclick="submitRegister()">Browse Categories</a></div>
+					<div class="ui-block-c"></div>
+				</div>
+				
+				<div class="ui-grid-b">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a data-role="button" onclick="submitRegister()">Messages</a></div>
+					<div class="ui-block-c"></div>
+				</div>	
+					
+			</div>
+				
+		</div>
+		
+		<!-- page 7 -->	
+		
+		<div id="browse_index" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+				
+				<div data-role="content">
+					<ul data-role="listview">
+						<li><a href="#books">Books</a></li>
+						<li><a href="#electronics">Electronics</a></li>
+						<li><a href="#computers">Computers</a></li>
+						<li><a href="#clothing">Clothing</a></li>
+						<li><a href="#shoes">Shoes</a></li>
+						<li><a href="#sports">Sports</a></li>
+					</ul>
+				</div>
+			
+		</div>		
+		<!-- page 8 -->	
+		
+		
+		<div id="books" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+				
+				<div data-role="content">
+					<ul data-role="listview">
+						<li><a href="#books">Children</a></li>
+						<li><a href="#electronics">Fiction</a></li>
+						<li><a href="#computers">Technology</a></li>
+						<li><a href="#clothing">Business</a></li>
+					</ul>
+				</div>
+			
+		</div>	
+		
+		<div id="electronics" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+				
+				<div data-role="content">
+					<ul data-role="listview">
+						<li><a href="#books">TV</a></li>
+						<li><a href="#electronics">Audio</a></li>
+						<li><a href="#computers">Phones</a></li>
+						<li><a href="#clothing">Cameras</a></li>
+						<li><a href="#clothing">Video</a></li>
+					</ul>
+				</div>
+			
+		</div>	
+		
+		<div id="computers" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+				
+				<div data-role="content">
+					<ul data-role="listview">
+						<li><a href="#books">Laptops</a></li>
+						<li><a href="#electronics">Desktops</a></li>
+						<li><a href="#computers">Tablets</a></li>
+						<li><a href="#clothing">Printers</a></li>
+					</ul>
+				</div>
+			
+		</div>		
+		
+		<div id="shoes" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+				
+				<div data-role="content">
+					<ul data-role="listview">
+						<li><a href="#books">Children</a></li>
+						<li><a href="#electronics">Women</a></li>
+						<li><a href="#computers">Men</a></li>
+					</ul>
+				</div>
+			
+		</div>	
+		
+		<div id="clothing" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+				
+				<div data-role="content">
+					<ul data-role="listview">
+						<li><a href="#books">Children</a></li>
+						<li><a href="#women">Women</a></li>
+						<li><a href="#men">Men</a></li>
+					</ul>
+				</div>
+			
+		</div>	
+		
+		<div id="sports" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+				
+				<div data-role="content">
+					<ul data-role="listview">
+						<li><a href="#books">Bicycles</a></li>
+						<li><a href="#electronics">Fishing</a></li>
+						<li><a href="#computers">Baseball</a></li>
+						<li><a href="#computers">Golf</a></li>
+						<li><a href="#computers">Basketball</a></li>
+
+					</ul>
+				</div>
+			
+		</div>		
+		
+		<div id="men" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+				
+				<div data-role="content">
+					<ul data-role="listview">
+						<li><a href="#books">Shirts</a></li>
+						<li><a href="#electronics">Pants</a></li>
+						<li><a href="#computers">Shoes</a></li>
+					</ul>
+				</div>
+			
+		</div>		
+		
+		<div id="women" data-role="page">
+				<div data-role="header" data-theme="b" data-position="fixed">
+					<a href="#mypanel" data-role="button" data-icon="flag">Home</a>
+					<a data-role="button" data-icon="shopping-cart" data-iconpos="notext" href="#welcome_page"></a>
+					<h1>Home</h1>
+				</div>
+				
+				<div data-role="content">
+					<ul data-role="listview">
+						<li><a href="#books">Shirts</a></li>
+						<li><a href="#electronics">Pants</a></li>
+						<li><a href="#computers">Dresses</a></li>
+					</ul>
+				</div>
+			
+		</div>								
+		
+
+					
+					
+	</body>
+</html>
